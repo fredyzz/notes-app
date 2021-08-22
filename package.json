@@ -2,8 +2,19 @@
   "name": "notes-app",
   "version": "1.0.0",
   "main": "index.js",
+  "workspaces": [
+    "api"
+  ],
   "scripts": {
+    "start:api": "node api/index.js",
+    "dev:api": "nodemon api/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "2.0.12"
   },
   "keywords": [],
   "author": "",
